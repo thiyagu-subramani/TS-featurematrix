@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Essential JS 2 - Calendar TS Feature Matrix</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Essential JS 2" />
+    <meta name="author" content="Syncfusion" />
+    <link rel="shortcut icon" href="../resources/favicon.ico" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--style reference from node_modules/@syncfusion/ej2/-->
+    <link href="../resources/component.css" rel="stylesheet" />
+    <link href="../component-properties/styles.css" rel="stylesheet" />
+    <script src="../../../node_modules/requirejs/require.js" data-main="formValidator.js"></script>
+    <script src="../../require.config.js"></script>
+
+</head>
+
+<body>
+    <div class="col-lg-12 control-section">
+        <div class="content-wrapper" style="margin-bottom: 25px">
+                <form id="formId" class="form-horizontal">
+                    <div class="form-group">
+                        <div class="e-float-input">
+                        <input id="date" type="text" class="form-control" name="Date" data-validation="date" data-date-message="Please enter valid date." data-required-message="Required field" required="" data-msg-containerid="dateError">
+                        </div>
+                        <div id="dateError"></div>
+                    </div>
+                    <div class="form-group">
+                            <div class="e-float-input">
+                                <input type="text" id="dateIso" name="DateISO" dateiso="true" data-dateiso-message="Please enter valid dateISO format(YYYY-MM-DD)." data-required-message="Required field" required="" data-msg-containerid="dateisoError">
+                            </div>
+                            <div id="dateisoError"></div>
+                        </div>
+                        <div class="form-group">
+                                <div class="e-float-input">
+                                    <input type="text" id="regex" name="Regex" regex="^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$" data-regex-message="accepts mm/dd/yyyy date format only" data-required-message="Required field" required="" data-msg-containerid="regexError">
+                                    <span class="e-float-line"></span>
+                                    <label class="e-float-text" for="regex">Regex (accepts mm/dd/yyyy date format only)</label>
+                                </div>
+                                <div id="regexError"></div>
+                            </div>
+                        <div class="row">
+                            <div style="float: left;margin: 0 10% 0 30%">
+                                <button id="validateSubmit" class="samplebtn" type="submit" style="height: 35px;">Submit</button>
+                            </div>
+                            <div>
+                                <button id="resetbtn" class="samplebtn" type="reset" style="height: 35px;">Reset</button>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div> 
+    <style>
+         .e-error,
+        .e-float-text {
+            font-weight: 500;
+        }
+
+        .form-horizontal .form-group {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        form {
+            border: 1px solid #ccc;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.36);
+            border-radius: 5px;
+            background: #f9f9f9;
+            padding: 23px;
+            padding-bottom: 20px;
+        }
+
+        .e-float-input {
+            width: 300px;
+        }
+    </style>
+</body>
+
+</html>

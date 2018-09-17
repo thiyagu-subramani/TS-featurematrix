@@ -1,0 +1,28 @@
+{
+    "name": "ej2-e2e-template",
+    "version": "1.0.0",
+    "description": "E2E Template repository",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "@syncfusion/ej2-base": "^0.147.0",
+        "@syncfusion/ej2-buttons": "*",
+        "@syncfusion/ej2-calendars": "*",
+        "@syncfusion/ej2-data": "*",
+        "@syncfusion/ej2-dropdowns": "^0.25.1",
+        "@syncfusion/ej2-inputs": "*",
+        "@syncfusion/ej2-lists": "*",
+        "@syncfusion/ej2-navigations": "*",
+        "@syncfusion/ej2-popups": "^0.66.4"
+    },
+    "devDependencies": {
+        "protractor": "5.3.2",
+        "@syncfusion/ej2-build": "*",
+        "@types/chai": "^3.4.28",
+        "@types/jasmine": "^2.2.29",
+        "@types/jasmine-ajax": "^3.1.27",
+        "@types/requirejs": "^2.1.26"
+    }
+}
